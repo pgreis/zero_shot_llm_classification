@@ -2,11 +2,11 @@ import os
 from huggingface_hub import InferenceClient
 from src.preprocessing import ProcessedLLMInputs
 
-def get_hf_token(token_name:str = "HF_TOKEN") -> str:
-    hf_token = os.getenv(token_name)
-    if not hf_token:
-        raise KeyError("HF_TOKEN not found in environment. Set HF_TOKEN or use dotenv in bootstrap.")
-    return hf_token
+# def get_hf_token(token_name:str = "HF_TOKEN") -> str:
+#     hf_token = os.getenv(token_name)
+#     if not hf_token:
+#         raise KeyError("HF_TOKEN not found in environment. Set HF_TOKEN or use dotenv in bootstrap.")
+#     return hf_token
 
 def get_hf_client(hf_provider:str,
                   hf_token:str) -> InferenceClient:

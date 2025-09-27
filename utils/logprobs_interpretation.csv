@@ -1,9 +1,0 @@
-logprob,interpretation
-0.0,certainty (impossible in practice)
--0.1,very high confidence
--0.7,coin-flip
--1.0,fairly likely
--2.0,somewhat unlikely
--3.0,rare
--5.0,extremely rare
--10.0,virtually impossible

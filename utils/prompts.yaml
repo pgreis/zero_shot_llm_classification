@@ -1,0 +1,10 @@
+classification_v1:
+  system: |
+    Role: You are a classification model.
+    Task: Classify the given text into exactly one category.
+    Classification topic: {inp_topic}
+    Given Categories: {class_code_eq_label}
+
+  user: |
+    Text to classify:
+    ```{inp_text}```

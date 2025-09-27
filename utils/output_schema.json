@@ -11,7 +11,7 @@
           "type": "string",
           "enum": "{class_codes}",
           "description": "{description}",
-          "pattern": "{regex}"
+          "pattern": "{allowed_responses_regex}"
         },
         "explanation": {
           "title": "Classification_Explanation",
