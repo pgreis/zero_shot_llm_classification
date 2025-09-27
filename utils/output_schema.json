@@ -1,0 +1,29 @@
+{
+  "type": "json_schema",
+  "json_schema": {
+    "name": "ClassificationSchema",
+    "schema": {
+      "title": "ClassificationSchema",
+      "type": "object",
+      "properties": {
+        "classification": {
+          "title": "Classification_Result",
+          "type": "string",
+          "enum": "{class_codes}",
+          "description": "{description}",
+          "pattern": "{regex}"
+        },
+        "explanation": {
+          "title": "Classification_Explanation",
+          "type": "string",
+          "description": "One short sentence explaining why the text was classified that way; reference only key words/phrases from the input. Do not mention the category name itself.",
+          "minLength": "{min_len_explanation}",
+          "maxLength": "{max_len_explanation}"
+        }
+      },
+      "required": ["classification", "explanation"],
+      "additionalProperties": false
+    },
+    "strict": true
+  }
+}
