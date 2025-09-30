@@ -1,6 +1,5 @@
 chat_completion:
 # docs: https://huggingface.co/docs/inference-providers/tasks/chat-completion
-  model: meta-llama/Llama-3.1-8B-Instruct # "Qwen/Qwen3-32B"#
   logprobs: true
   frequency_penalty: 1 # Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim.
   max_tokens: 1024
@@ -8,6 +7,7 @@ chat_completion:
   top_p: 0.1 # An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered.
 
 hf_client:
+  hf_model : meta-llama/Llama-3.1-8B-Instruct # "Qwen/Qwen3-32B"#
   hf_provider : nebius
 
 logprob_interpretation:
